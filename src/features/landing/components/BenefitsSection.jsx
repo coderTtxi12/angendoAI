@@ -11,16 +11,15 @@ function BenefitsSection() {
       {/* Desktop version: hidden on small screens */}
 
       <Box
-        component="section"
         sx={{
-          py: { md: 10 },
-          px: { md: 4 },
+          px: 4,
           display: { xs: "none", md: "block" },
         }}
       >
         <Typography
           variant="h2"
           sx={{
+            pb: 8,
             mb: 0,
             textAlign: "center",
           }}
@@ -28,11 +27,23 @@ function BenefitsSection() {
           Typeform helps you understand customers
         </Typography>
 
-        <BenefitsDesktopSection></BenefitsDesktopSection>
+        {benefitsDb.map((benefit, index) => {
+          let reversed = index % 2 === 0 ? false : true;
+
+          return (
+            <BenefitsDesktopSection
+              key={benefit.id}
+              id={benefit.id}
+              title={benefit.title}
+              subtitle={benefit.subtitle}
+              image={benefit.image}
+              alt={benefit.alt}
+              description={benefit.description}
+              reversed={reversed}
+            />
+          );
+        })}
       </Box>
-
-
-
 
       {/* Mobile version: shown only on small screens */}
       <Box sx={{ display: { xs: "block", md: "none" } }}>

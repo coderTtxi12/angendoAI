@@ -7,6 +7,7 @@ function HeroSection() {
     <heroSection>
       <Box
         component="section"
+        
         sx={{
           //Padding
           py: { xs: 6, md: 10 }, 
