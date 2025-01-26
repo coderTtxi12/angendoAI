@@ -1,4 +1,3 @@
-// BenefitsSection.jsx
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import BenefitsMobileSection from "./BenefitsMobileSection";
@@ -28,6 +27,8 @@ function BenefitsSection() {
         </Typography>
 
         {benefitsDb.map((benefit, index) => {
+
+          // Reverse the order of the benefits on every odd index
           let reversed = index % 2 === 0 ? false : true;
 
           return (

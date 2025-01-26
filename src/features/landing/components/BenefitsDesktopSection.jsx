@@ -3,14 +3,17 @@ import { Box, Grid, Typography, Button } from "@mui/material";
 
 function BenefitsDesktopSection(props) {
   return (
+    
     <Grid
       container
       spacing={4}
       alignItems="center"
       sx={{ mb: { md: 8 } }}
-      // On large screens, reverse the row if reversed===true
+      // On large screens, reverse the row if reversed===true, this makes the image appear on the left
       direction={{ md: props.reversed ? "row-reverse" : "row" }}
     >
+      {/* Layout for desktop */}
+
       <Grid item md={6}>
         {/* T1 */}
 
