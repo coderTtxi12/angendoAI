@@ -17,15 +17,18 @@ function Header() {
         maxWidth: "1400px",
         mx: "auto", // margin-left: auto; margin-right: auto
         width: "100%",
+
+        //Blur effect
         backgroundColor: "white",
+        backdropFilter: "blur(10px)",
+        backgroundColor: "rgba(255, 255, 255, 0.7)",
+  
       }}
     >
       <Toolbar>
-
         {/* Logo */}
 
         <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-
           <Typography
             variant="h6"
             sx={{ fontWeight: "bold", color: "primary.main" }}
