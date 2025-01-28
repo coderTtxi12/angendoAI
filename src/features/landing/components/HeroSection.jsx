@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Box, Grid, Typography, TextField, Button } from "@mui/material";
 import image from "../../../assets/images/image.jpg";
 
 function HeroSection() {
+  // const [vantaEffect, setVantaEffect] = useState(null);
+  // const vantaRef = useRef(null);
+
+  // useEffect(() => {
+  //   if (!vantaEffect && window.VANTA) {
+  //     setVantaEffect(
+  //       window.VANTA.BIRDS({
+  //         el: vantaRef.current,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: false,
+  //         scale: 1.0,
+  //         scaleMobile: 1.0,
+  //         backgroundColor: 0xffffff,
+  //         color1: 0x4a5568,
+  //         color2: 0x6b46c1,
+  //         birdSize: 1.5,
+  //         wingSpan: 20.0,
+  //         separation: 50.0,
+  //         quantity: 5,
+  //       })
+  //     );
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy();
+  //   };
+  // }, [vantaEffect]);
+
   return (
     <Box
-      component="section"
       sx={{
         //Padding
         py: { xs: 6, md: 10 },

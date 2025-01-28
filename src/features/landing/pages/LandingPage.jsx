@@ -4,6 +4,8 @@ import HeroSection from "../components/HeroSection";
 import BenefitsSection from "../components/BenefitsSection";
 import "../styles/landing.css";
 import SocialProofSection from "../components/SocialProofSection";
+import CallToActionSection from "../components/CallToActionSection";
+import Footer from "../../../layout/Footer";
 
 function LandingPage() {
   return (
@@ -12,6 +14,8 @@ function LandingPage() {
       <HeroSection />
       <BenefitsSection />
       <SocialProofSection />
+      <CallToActionSection />
+      <Footer />
     </div>
   );
 }

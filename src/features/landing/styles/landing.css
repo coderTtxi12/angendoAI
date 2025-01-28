@@ -13,14 +13,12 @@
 
   }
 
-
   .landingContainer {
     /* Use flexbox layout */
     display: flex;
 
     /* Arrange children in a column */
     flex-direction: column;
-
 
   }
 
