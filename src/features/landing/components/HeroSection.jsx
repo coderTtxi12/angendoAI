@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Grid, Typography, TextField, Button } from "@mui/material";
 import image from "../../../assets/images/image.jpg";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
   // const [vantaEffect, setVantaEffect] = useState(null);
@@ -30,6 +31,14 @@ function HeroSection() {
   //     if (vantaEffect) vantaEffect.destroy();
   //   };
   // }, [vantaEffect]);
+
+  const navigate = useNavigate();
+
+  const handleGenerate = () => {
+    // Potentially do other logic here, e.g. call a REST API,
+    // store something in Redux or context, etc.
+    navigate("/calendar");
+  };
 
   return (
     <Box
@@ -96,8 +105,10 @@ function HeroSection() {
               sx={{
                 minWidth: "120px",
                 borderRadius: 20,
+
                 textTransform: "none",
               }}
+              onClick={handleGenerate}
             >
               Generate
             </Button>

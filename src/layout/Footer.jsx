@@ -28,11 +28,11 @@ function Footer() {
           mb: 3,
         }}
       >
-        {/* Logo + short description */}
+        {/* Logo and description */}
         <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-          {/* Logo or brand name */}
+
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            {/* Example: an <img> or your brand icon */}
+
             <Box
               component="img"
               src="/your-logo.png"
@@ -68,7 +68,7 @@ function Footer() {
 
       <Divider />
 
-      {/* Bottom Row */}
+      {/* Bottom */}
       <Box
         sx={{
           display: "flex",

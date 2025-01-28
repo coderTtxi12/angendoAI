@@ -18,7 +18,7 @@ function Header() {
         mx: "auto", // margin-left: auto; margin-right: auto
         width: "100%",
 
-        //Blur effect
+        // Blur effect
         backgroundColor: "white",
         backdropFilter: "blur(10px)",
         backgroundColor: "rgba(255, 255, 255, 0.7)",
